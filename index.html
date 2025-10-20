@@ -9,8 +9,10 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
+        height: 100%;
         background: black;
         color: white;
+        overflow-x: hidden;
     }
 
     /* Video background */
@@ -20,7 +22,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* makes video fill without distortion */
+        object-fit: cover;
         z-index: -1;
     }
 
@@ -53,6 +55,15 @@
 </style>
 </head>
 <body>
+
+<!-- Video background -->
+<video autoplay muted loop playsinline>
+    <!-- Use local file -->
+    <!-- <source src="matrixx.mp4" type="video/mp4"> -->
+    <!-- Or use online test video (works on any browser) -->
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
 
     <video autoplay muted loop playsinline>
         <source src="matrixx.mp4" type="video/mp4">
