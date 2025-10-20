@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codes By Divyansh Sharma</title>
     <style>
-        body, html {
+        /* Basic reset */
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body, html {
             height: 100%;
+            font-family: Arial, sans-serif;
             background: black;
             color: white;
             overflow-x: hidden;
@@ -22,10 +27,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* change to contain if you want original size */
             z-index: -1;
         }
 
+        /* Content overlay */
         .content {
             position: relative;
             z-index: 1;
@@ -56,8 +62,12 @@
 </head>
 <body>
 
+    <!-- Background video -->
     <video autoplay muted loop playsinline>
+        <!-- Replace with your local video file -->
         <source src="matrixx.mp4" type="video/mp4">
+        <!-- Test fallback video -->
+        <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
         Your browser does not support HTML5 video.
     </video>
 
