@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codes By Divyansh Sharma</title>
-
-    <!-- Matrix font -->
-    <link href="https://fonts.cdnfonts.com/css/matrix-code-nfi" rel="stylesheet">
-
     <style>
         body, html {
             margin: 0;
@@ -28,17 +24,19 @@
             object-fit: cover;
         }
 
-        /* Content styling */
         .content {
             position: relative;
             z-index: 1;
             padding: 20px;
         }
 
+        /* Matrix-style h1 in readable English */
         h1 {
-            color: #00ff00; /* matrix green */
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace; /* clean monospace font */
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
             margin-top: 20px;
-            font-family: 'Matrix Code NFI', monospace;
         }
 
         a {
@@ -49,15 +47,15 @@
             transition: all 0.3s ease;
         }
 
-        /* Glow effect on hover */
         a:hover {
             text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;
             color: #00ffff;
         }
     </style>
+</head>
+<body>
 
-    <!-- Video Background -->
-    <video autoplay muted loop playsinline style="position:fixed; right:0; bottom:0; min-width:100%; min-height:100%; z-index:-1;">
+    <video autoplay muted loop playsinline>
         <source src="matrixx.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
